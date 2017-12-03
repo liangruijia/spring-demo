@@ -17,6 +17,6 @@ public class HelloController {
 
     @RequestMapping(value = "/hello")
     public String helloWorld(){
-        return "hello my wonderful world liang:" + testProperties.getAppName() + "," + testProperties.getVersion();
+        return "hello my wonderful world:" + testProperties.getAppName() + "," + testProperties.getVersion();
     }
 }
