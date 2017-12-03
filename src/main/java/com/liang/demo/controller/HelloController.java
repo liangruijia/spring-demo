@@ -5,8 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Date;
-
 /**
  * @author liangruijia
  */
@@ -16,7 +14,7 @@ public class HelloController {
     TestProperties testProperties;
 
     @RequestMapping(value = "/hello")
-    public String helloWorld(){
-        return "hello my wonderful world:" + testProperties.getAppName() + "," + testProperties.getVersion();
+    public String helloWorld() {
+        return "hello my wonderful world --:" + testProperties.getAppName() + "," + testProperties.getVersion();
     }
 }
